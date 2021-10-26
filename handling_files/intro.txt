@@ -1,0 +1,3 @@
+fh.close()
+- flushes outpit buffer and decouples file handle
+	- All pending writes copied to disk

@@ -1,0 +1,26 @@
+fh = open('file_name', 'r') 
+
+contents = fh.read()
+- Reads entire file into name as a single string, contents will have the entire file as a one string.
+
+contents = fh.readline()
+- reads one line into name - lines end with '\n'
+
+contents = fh.readlines()
+- reads entire file as a list of strings
+ 	- each string is one line, ending with '\n'
+
+Reading files
+
+- reading files is a sequential opration.
+	- when file is opened, point to a position 0, the start.
+	- Each succesive readline() moves forward
+- fh.seek(n) - moves pointer to position n
+- block - fh.read(12) -  read a fixed number of characters.
+
+End of file 
+
+- when reading a file increamentaly, important to know when a file has ended.
+- the following both signal end of file
+	- fh.read() retuns empty string 
+	- fh.readline() returns emplty string

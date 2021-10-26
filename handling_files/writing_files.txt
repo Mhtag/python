@@ -1,0 +1,8 @@
+fh.write(s)
+-write string s to file
+	- returns number of characters written
+	- include '\n' explicitilu=y to go to a new line
+
+fh.writelines(l)
+- write a list of lines l to file
+	- Must includes '\n' explicitly for each string
